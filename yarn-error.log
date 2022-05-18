@@ -1,11 +1,11 @@
 Arguments: 
-  /usr/bin/node /usr/share/yarn/bin/yarn.js install
+  /usr/bin/node /usr/share/yarn/bin/yarn.js add -D parcel-bundler
 
 PATH: 
-  /root/Documents/node_modules/.bin:/root/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.dotnet/tools
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.dotnet/tools
 
 Yarn version: 
-  1.22.18
+  1.22.19
 
 Node version: 
   17.9.0
@@ -16,7 +16,7 @@ Platform:
 Trace: 
   SyntaxError: /usr/local/share/.cache/yarn/v6/npm-form-data-3.0.1-ebd53791b78356a99af9a300d4282c4d5eb9755f-integrity/node_modules/form-data/.yarn-metadata.json: Unexpected end of JSON input
       at JSON.parse (<anonymous>)
-      at /usr/share/yarn/lib/cli.js:1625:59
+      at /usr/share/yarn/lib/cli.js:1629:59
       at Generator.next (<anonymous>)
       at step (/usr/share/yarn/lib/cli.js:310:30)
       at /usr/share/yarn/lib/cli.js:321:13
