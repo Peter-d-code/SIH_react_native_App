@@ -14,9 +14,10 @@ import {useFonts,Inter_100Thin,
     import AppLoading from 'expo-app-loading';
 import { useNavigation } from '@react-navigation/native';
 export default function Menu(){
+    const Navigator = useNavigation();
 const onPress = (Route:any)=>{
     const Navigator = useNavigation();
-   return ()=>Navigator.navigate(Route)
+   Navigator.navigate(Route)
 }
 let [fontsLoaded] = useFonts({
     Inter_100Thin,
@@ -34,10 +35,10 @@ let [fontsLoaded] = useFonts({
     return <AppLoading />;
   }
 return(<><View style = {Style.Container}>
-    <TouchableOpacity style = {Style.Button} onPress ={()=>{onPress('Home')}}>
+    <TouchableOpacity style = {Style.Button} onPress ={()=>Navigator.navigate("Home")}>
         <Text style  = {{fontSize: 25, fontFamily: "Inter_600SemiBold", color: "white"}}>Home</Text>
     </TouchableOpacity>
-    <TouchableOpacity style = {Style.Button} onPress ={()=>onPress('About')}>
+    <TouchableOpacity style = {Style.Button} onPress ={()=>Navigator.navigate("About")}>
         <Text style  = {{fontSize: 25, fontFamily: "Inter_600SemiBold", color: "white"}}>About</Text>
     </TouchableOpacity>
     </View></>)
