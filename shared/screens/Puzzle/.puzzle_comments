@@ -1,0 +1,26 @@
+// import { StyleSheet, Text, View, ViewStyle, Image, ImageBackground, TextInput, KeyboardAvoidingView, Platform, Keyboard, ScrollView, Button, Pressable, FlatList,} from 'react-native';
+// import {useState, useEffect} from "react";
+// import {UNSPLASH_RANDOM_API,Random_pic_Api} from "@env"
+// import App from "./Puzzle/App"
+// export default function Puzzle() {
+//     const [counter, setCounter] = useState(0)
+//         const [randomImage, setRandomImage] = useState('')
+//         const [exceed, setLimit] = useState(false)
+//     const Random_pic =  async ()=> {
+//         setCounter(counter+1)
+//         try{
+//           const link = await fetch(UNSPLASH_RANDOM_API).then(res=>res.json())
+//           const {full} = link.urls
+//           setRandomImage(full.toString())
+//         }
+//           catch(Err){
+//               setLimit(true)
+//           }
+//         }
+//           if(counter < 2 && exceed === false)
+//           Random_pic();
+//     return(<>
+//     <App randomImage = {randomImage}/>
+//     </>)
+// }
+

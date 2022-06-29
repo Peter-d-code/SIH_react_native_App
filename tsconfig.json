@@ -1,6 +1,31 @@
 {
   "extends": "expo/tsconfig.base",
-  "compilerOptions": {
-    "strict": true
-  }
+    "compilerOptions": {
+      "target": "es6",
+      "lib": [
+        "dom",
+        "dom.iterable",
+        "esnext",
+        "ES2021.String"
+      ],                               /* Specify what module code is generated. */
+      "rootDir": "/shared",
+      "outDir": "./shared",                                  /* Specify the root folder within your source files. */
+      "allowJs": true,
+      "typeRoots" : ["node_modules/@types", "shared/types"],
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "noFallthroughCasesInSwitch": true,
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "noEmit": true,
+      "jsx": "react-jsx"
+    },
+  "include": 
+  ["./index.d.ts"],
+  "exclude":["./node_modules"],
 }
